@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: PhotonServerSettings
   m_EditorClassIdentifier: 
   AppSettings:
-    AppIdRealtime: 
+    AppIdRealtime: 9f7dd867-68ba-455c-86bb-c40561719979
     AppIdChat: 
-    AppIdVoice: 
+    AppIdVoice: 58feaabb-b65e-4b51-b971-3e6b1b5ba72c
     AppVersion: 
     UseNameServer: 1
-    FixedRegion: 
+    FixedRegion: kr
     Server: 
     Port: 0
     ProxyServer: 
@@ -41,6 +41,8 @@ MonoBehaviour:
   - CantHearYou
   - ChangeColour
   - HeresWhy
+  - moveRPC
+  - rotateRPC
   DisableAutoOpenWizard: 1
-  ShowSettings: 0
+  ShowSettings: 1
   DevRegionSetOnce: 0
