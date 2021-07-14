@@ -1032,6 +1032,11 @@ PrefabInstance:
       propertyPath: roomUI
       value: 
       objectReference: {fileID: 141467208}
+    - target: {fileID: 5307500663257822133, guid: 86ceba4ed08c31443836c87f4dd54a6f,
+        type: 3}
+      propertyPath: defaultRooms.Array.data[0].sceneName
+      value: Net1
+      objectReference: {fileID: 0}
     - target: {fileID: 5307500663257822134, guid: 86ceba4ed08c31443836c87f4dd54a6f,
         type: 3}
       propertyPath: m_Name
