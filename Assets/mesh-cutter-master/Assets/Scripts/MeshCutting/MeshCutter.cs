@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MeshCutter
 {
-
+   
     public TempMesh PositiveMesh { get; private set; }
     public TempMesh NegativeMesh { get; private set; }
 
