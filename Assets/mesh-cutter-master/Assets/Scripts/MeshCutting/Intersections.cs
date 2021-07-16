@@ -45,6 +45,9 @@ public class Intersections
     /// <summary>
     /// Find intersection between a plane and a line segment defined by vectors first and second.
     /// </summary>
+
+    //Intersect : 현재 사각형과 지정된 사각형이 겹치는 부분을 찾아 결과를 현재 사각형으로 저장합니다.
+
     public ValueTuple<Vector3, Vector2> Intersect(Plane plane, Vector3 first, Vector3 second, Vector2 uv1, Vector2 uv2)
     {
         edgeRay.origin = first;
@@ -63,6 +66,7 @@ public class Intersections
         {
             Item1 = edgeRay.GetPoint(dist)
         };
+        
 
         var relativeDist = dist / maxDist;
         // Compute new uv by doing Linear interpolation between uv1 and uv2
@@ -70,7 +74,6 @@ public class Intersections
         returnVal.Item2.y = Mathf.Lerp(uv1.y, uv2.y, relativeDist);
         return returnVal;
     }
-
     /*
      * Small diagram for reference :)
      *       |      |  /|
@@ -84,8 +87,8 @@ public class Intersections
      *       |      |
      *       |___________________
      */
-
-    public bool TrianglePlaneIntersect(List<Vector3> vertices, List<Vector2> uvs, List<int> triangles, int startIdx, ref Plane plane, TempMesh posMesh, TempMesh negMesh, Vector3[] intersectVectors)
+     
+    public bool TrianglePlaneIntersect(List<Vector3> vertices, List<Vector2> uvs, List<int> triangles, int startIdx, ref Plane plane,TempMesh posMesh, TempMesh negMesh, Vector3[] intersectVectors)
     {
         int i;
 
@@ -124,6 +127,7 @@ public class Intersections
         if (nextPoint == 3) nextPoint = 0;
 
         // Get the 2 intersection points
+
         ValueTuple<Vector3, Vector2> newPointPrev = Intersect(plane, v[lonelyPoint], v[prevPoint], u[lonelyPoint], u[prevPoint]);
         ValueTuple<Vector3, Vector2> newPointNext = Intersect(plane, v[lonelyPoint], v[nextPoint], u[lonelyPoint], u[nextPoint]);
 

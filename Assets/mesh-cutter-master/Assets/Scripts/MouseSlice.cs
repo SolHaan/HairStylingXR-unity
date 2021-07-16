@@ -7,7 +7,7 @@ public class MouseSlice : MonoBehaviour {
     public Transform ObjectContainer;
 
     // How far away from the slice do we separate resulting objects
-    public float separation;
+    public float separation; // 잘랐을때 생기는 간격의 크기
 
     // Do we draw a plane object associated with the slice
     private Plane slicePlane = new Plane();

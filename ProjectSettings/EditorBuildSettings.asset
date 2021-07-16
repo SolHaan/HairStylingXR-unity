@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/01.Scenes/Network/Multiplayer.unity
     guid: d776c51a60eff8d4aa29bb10aff98dbc
   - enabled: 1
-    path: Assets/01.Scenes/Network/MultiRoom1.unity
-    guid: 742c6b7f2db66e048a0b8caabf39a998
-  m_configObjects: {}
+    path: Assets/01.Scenes/Network/Net1.unity
+    guid: 22112c00a5634494996d64ff9f004047
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b3ac24369c63cb246976bcaf96adab11,
+      type: 2}
+    Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 2ec24d39f7b5ac84aad7e5df7b4fd3ea,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: bc87842975b39e54c9a8257bb65aef55,
+      type: 2}
